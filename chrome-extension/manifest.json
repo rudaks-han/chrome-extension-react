@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "My Chrome extension",
+  "version": "1.0.0",
+  "action": { "default_popup": "index.html" },
+  "icons": {
+    "16": "src/assets/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.naver.com/*"],
+      "js": ["src/content/main.tsx"],
+      "media": []
+    }
+  ]
+}
